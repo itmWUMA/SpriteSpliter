@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ant-upload-wrapper.ant-upload-drag {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.ant-layout-header {
+  background-color: #001529 !important;
+  color: white;
+}
+
+.ant-layout-header .ant-typography {
+  color: white !important;
+}
+
+.ant-layout-content {
+  padding: 20px 50px !important;
+}
+
+.ant-layout-footer {
+  background-color: #f0f2f5 !important;
+  color: rgba(0, 0, 0, 0.65);
+}
