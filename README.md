@@ -20,10 +20,13 @@
 
 *   [Node.js](https://nodejs.org/) (推荐 LTS 版本)
 *   [npm](https://www.npmjs.com/) (通常随 Node.js 一同安装)
+*   [Docker](https://www.docker.com/get-started) (如果选择 Docker 部署)
 
 ### 运行项目
 
-为了方便您快速启动项目，我们提供了跨平台的启动脚本。
+为了方便您快速启动项目，我们提供了跨平台的启动脚本和 Docker 部署方案。
+
+#### 1. 本地运行
 
 1.  **克隆仓库** (如果您尚未克隆):
     ```bash
@@ -49,6 +52,26 @@
     项目启动成功后，请在您的浏览器中访问：
     ```
     http://localhost:5173
+    ```
+
+#### 2. Docker 部署
+
+1.  **构建 Docker 镜像**:
+    在项目根目录（`spritespliter/sprite-spliter-app` 目录）下执行以下命令：
+    ```bash
+    docker build -t sprite-spliter .
+    ```
+
+2.  **运行 Docker 容器**:
+    ```bash
+    docker run -p 5174:80 sprite-spliter
+    ```
+    这会将容器的 80 端口映射到您主机的 5174 端口。
+
+3.  **访问应用**:
+    在浏览器中访问：
+    ```
+    http://localhost:5174
     ```
 
 ## 使用说明
